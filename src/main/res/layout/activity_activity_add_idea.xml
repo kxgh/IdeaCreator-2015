@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kristian.ideacreator.ActivityAddIdea">
+
+    <include
+        android:id="@+id/activityAddIdeaStatusBar"
+        layout="@layout/statusbar_custom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activityAddIdeaStatusBar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/activityAddIdeaContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:gravity="center"
+                            android:text="@string/addIdeaTextHint"
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textStyle="italic"
+                            android:id="@+id/addIdeaPrefix"
+                            android:gravity="center"
+                            android:text="@string/addIdeaTextPrefix"
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/addIdeaEditText"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textAutoCorrect"
+                            android:hint="@string/addIdeaTextHint"
+                            />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dip"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:gravity="center"
+                            android:text="@string/addIdeaObscHint"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"/>
+
+                        <TextView
+                            android:id="@+id/addIdeaObsc"
+                            android:gravity="center"
+                            android:text="@string/addIdeaObsc"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"/>
+
+                        <SeekBar
+                            android:id="@+id/addIdeaSeekbar"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:max="10"
+                            android:layout_height="wrap_content"
+                            android:layout_width="300dp"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dip"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/addIdeaSelectCategory"
+                            android:textSize="20sp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/addIdeaCategoryRadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/addIdeaRadioProject"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ctgProject"
+                                        android:textSize="16sp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/addIdeaRadioHobby"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ctgHobby"
+                                        android:textSize="16sp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/addIdeaRadioTravel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/ctgTravel"
+                                        android:textSize="16sp"/>
+                                </LinearLayout>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    >
+
+                    <Button
+                        android:text="Add this idea"
+                        android:padding="16dp"
+                        android:textColor="@color/textColorOnDarkBack"
+                        android:background="@color/colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="addIdeaButtonClicked"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

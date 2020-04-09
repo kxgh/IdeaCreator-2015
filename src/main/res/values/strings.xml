@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">IdeaCreator</string>
+    <string name="creation_beforeSpinnerText">I need an idea for a </string>
+    <string name="creation_beforeObscurityText">Select idea obscurity </string>
+    <string name="creation_selectedObscurityText">Obscurity </string>
+    <string name="creation_ideaLike">Save this idea!</string>
+    <string name="creation_ideaDislike">Not a good idea</string>
+    <string name="creation_noSuchIdea">No idea found matching your selection</string>
+
+    <string name="toastDbUpdateCompleted">Completed updating Idea database. Added %d new Ideas!</string>
+    <string name="notifDbUpdateCompleted">Idea database updated.</string>
+    <string name="notifPackInstalled">Pack installed! Added %d new Ideas!</string>
+    <string name="dbBeingUpdatedMsg">Your local idea database is being updated! Try again in few seconds</string>
+    <string name="txtOk">Understood</string>
+    <string name="creation_clickToGenerate">Touch the lightbulb to create an idea!</string>
+    <string name="toastIdeaSaved">Idea saved!</string>
+    <string name="toastIdeaSavingFailure">Error saving idea</string>
+    <string name="savedIdeasNotRealizedMsg">Idea not realized yet…</string>
+    <string name="savedIdeasRealizedDatetime">Realized on %s</string>
+    <string-array name="ideaCategories">
+        <item>project</item>
+        <item>hobby</item>
+        <item>place to travel</item>
+    </string-array>
+    <string name="ctgProject">Project</string>
+    <string name="ctgHobby">Hobby</string>
+    <string name="ctgTravel">Travel</string>
+
+
+    <string name="stgName">name</string>
+    <string name="stgNameTitle">Set name</string>
+    <string name="stgNameDfl">You</string>
+    <string name="stgAsk">ask</string>
+    <string name="stgAskTitle">Ask me before saving idea</string>
+    <string name="stgAskDfl">true</string>
+    <string name="stgAddIdea">addIdea</string>
+    <string name="stgAddIdeaTitle">Add Idea…</string>
+
+    <string name="mainBeforeListViewText">Recently realized ideas:</string>
+    <string name="addIdeaTextHint">Enter idea text here:</string>
+    <string name="addIdeaTextPrefix"> </string>
+    <string name="addIdeaObscHint">Select obscurity:</string>
+    <string name="addIdeaObsc">0</string>
+    <string name="addIdeaSelectCategory">Select idea category:</string>
+    <string name="stgResetTablesTitle">Reset idea database</string>
+    <string name="stgResetTables">resetTables</string>
+    <string name="stgPacks">packs</string>
+    <string name="stgPacksTitle">Install idea pack</string>
+    <string name="packsHint">These are idea packages available for install. Long press the package you wish to install or uninstall(requires internet connection).</string>
+    <string name="packsAlreadyInstalled">Installed</string>
+    <string name="packsNotInstalled">Not installed</string>
+    <string name="packsCurrentlyInstalling">Downloading...</string>
+</resources>

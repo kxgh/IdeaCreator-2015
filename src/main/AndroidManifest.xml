@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kristian.ideacreator">
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo3"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ActivityMainScreen"
+            android:theme="@style/IdeaAppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityCreationScreen"
+            android:theme="@style/IdeaAppThemeNoActionBar" />
+        <activity
+            android:name=".ActivityBrowseIdeas"
+            android:theme="@style/IdeaAppThemeNoActionBar" />
+        <activity
+            android:name=".ActivitySettings"
+            android:label="Preferences" />
+
+        <provider
+            android:name=".IdeasContentProvider"
+            android:authorities="com.example.kristian.ideacreator.provider.IdeasContentProvider"
+            android:enabled="true"
+            android:exported="false" />
+        <provider
+            android:name=".IdeasContentProvider"
+            android:authorities="com.example.kristian.ideacreator.provider.IdeasContentProvider"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".UpdateNotificationService"
+            android:exported="false" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        //TODO
+        <activity
+            android:name=".ActivityAddIdea"
+            android:theme="@style/IdeaAppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="com.example.kristiak.ideacreator.ActivityAddIdea" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityPacks"
+            android:theme="@style/IdeaAppThemeNoActionBar"
+            ></activity>
+    </application>
+
+</manifest>

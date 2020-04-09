@@ -1,0 +1,33 @@
+<android.support.v7.widget.Toolbar android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    app:titleTextColor="@color/textColorOnDarkBack"
+    android:theme="@style/IdeaAppThemeNoActionBar"
+    app:popupTheme="@style/IdeaAppThemeNoActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+    <LinearLayout
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo3"
+        android:layout_gravity="center_vertical" />
+    <TextView
+        android:paddingLeft="10dp"
+        android:textColor="@color/textColorOnDarkBack"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

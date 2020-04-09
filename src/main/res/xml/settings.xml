@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:key="@string/stgName" android:title="@string/stgNameTitle"
+        android:defaultValue="@string/stgNameDfl"
+        />
+    <CheckBoxPreference android:key="@string/stgAsk"
+        android:title="@string/stgAskTitle"
+        android:defaultValue="@string/stgAskDfl"/>
+    <Preference android:title="@string/stgResetTablesTitle" android:key="@string/stgResetTables"/>
+    <PreferenceCategory android:title="Add new Ideas">
+        <Preference android:title="@string/stgAddIdeaTitle" android:key="@string/stgAddIdea"/>
+        <Preference android:title="@string/stgPacksTitle" android:key="@string/stgPacks"/>
+    </PreferenceCategory>
+</PreferenceScreen>

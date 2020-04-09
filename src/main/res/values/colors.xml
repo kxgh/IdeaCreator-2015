@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ba68c8</color>
+    <color name="colorPrimaryDark">#673ab7</color>
+    <color name="colorAccent">#ef5350</color>
+    <color name="textColorOnDarkBack">#ffffff</color>
+    <color name="textColorOnLightBack">#000000</color>
+    <color name="bgColor">#ffffff</color>
+    <color name="obscMax">#d50000</color>
+    <color name="obscHigh">#ff6f00</color>
+    <color name="obscMid">#5e35b1</color>
+    <color name="obscLow">#00695c</color>
+    <color name="obscMin">#00c853</color>
+
+    <color name="colorOk">#00c853</color>
+    <color name="colorNotOk">#f4511e</color>
+    <color name="colorWarn">#ffb300</color>
+</resources>
